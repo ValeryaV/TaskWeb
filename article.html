@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Статья</title>
+    <link rel="stylesheet" href="swiper-4.1.6/dist/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<header class="header">
+    <div class="top-header ">
+        <div class="container-external">
+            <div class = "menu-desktop">
+                <div class="menu">
+                    <div class="menu-header">
+                        <div class="menu__logo">
+                            <a href="index.html">
+                                <img class="logo" src="img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="menu__links s-title">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-search "></i>
+                                    </li>
+                                    <li>
+                                        <a href="company.html">Компания</a>
+                                    </li>
+                                    <li>
+                                        <a href="factory.html">Фабрика</a>
+                                    </li>
+                                    <li>
+                                        <a href="order.html">Под заказ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a href="delivery.html">Доставка</a>
+                                    </li>
+                                    <li>
+                                        <a href="contacts.html">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a class="mrp" href="tel:+7(495)120-14-20">+7(495)120-14-20</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu__icons">
+                            <a href="#">
+                                <img src="img/footer-basket.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-star.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-lock.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <div class="burger">
+                    <button onclick="menu()" class="c-hamburger c-hamburger--htx">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="mobile-logo">
+                    Купи диван
+                </div>
+                <a href="tel:+7(495)120-14-20"> <i class="fa fa-phone"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container-external">
+            <div class="lists m-title">
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel1.png" alt="cushioned furniture">
+                        </div>
+                        <span class="list__title">Мягкая</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel2.png" alt="cabinet furniture">
+                        </div>
+                        <span class="list__title">Корпусная</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel3.png" alt="cabinets">
+                        </div>
+                        <span class="list__title">Шкафы</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel4.png" alt="bedrooms">
+                        </div>
+                        <span class="list__title">Спальни</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel5.png" alt="tables">
+                        </div>
+                        <span class="list__title">Столы</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel6.png" alt="chairs">
+                        </div>
+                        <span class="list__title">Стулья</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel7.png" alt="subjects">
+                        </div>
+                        <span class="list__title">Предметы</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel8.png" alt="light">
+                        </div>
+                        <span class="list__title">Свет</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel9.png" alt="shares">
+                        </div>
+                        <span class="list__title">Акции</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel10.png" alt="other">
+                        </div>
+                        <span class="list__title">Другое</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dropdown-menu">
+    <div class="container-external">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Компания</a>
+                </li>
+                <li>
+                    <a href="#">Фабрика</a>
+                </li>
+                <li>
+                    <a href="#">Под заказ</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Доставка</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<section class="info">
+    <div class="container">
+        <div class="info__content">
+            <div class="info-left">
+                <div class="info-left__top">
+                    <div class="info-left__date">
+                        6 декабря 2009
+                    </div>
+                    <div class="info-left__sources mrp">
+                        Источник: www.mebel.by
+                    </div>
+                </div>
+                    <div class="info-left__title l-title">
+                        Выбираем диванчик - aisha мягкая мебель, aisha фабрика мягкой мебели
+                    </div>
+                    <div class="info-left__text">
+                        <p>Приобретая диван надо сразу же определиться: сколько вы будете им пользоваться и в каких целях. Так или иначе диван должен быть удобным и не вредить спине. Выбирая диван следует обратить внимание на такие его элементы: каркас, наполнитель, способ ракладывания, обивка. Начнём с каркаса.
+
+                        <p>Давайте поинтересуемся, что же именно мы покупаем?
+
+                        <p>Начнем с обивки. Что же может входить в ткань для обивки? Обивочные ткани для мягкой мебели - это в первую очередь не их рисунок, а их свойства. Например, сатин, лен, шерсть обладают особыми свойствами: грязе- и водоотталкивание, негорючесть. А есть и специально созданные ткани (с тефлоновой обработкой), которые отталкивают жир, грязь, чай, кофе, вино, молоко. В обивочной ткани может присутствовать мохер, шелк, лайкра; в обивке могут быть натуральные, смесовые и синтетические волокна. Популярна искусственная замша алькантара, очень приятна на ощупь и износостойкая. Традиционные гобелены, кожа, хлопок тоже используются в качестве обивок.</p>
+
+                        <p>А мягкая мебель обитая натуральной кожей - это несомненно высококачественная мебель. Используют для обивки козью (сафьян, велюр, хром) свиную и лошадиную (хром, юфть) кожи, которые должны быть эластичными, одинаковой небольшой толщины, без складок, иметь равномерный бархатный блеск. И стоит такая мебель, конечно, не дешево.</p>
+
+                        <p>А теперь подберем диванчик по цвету обивки. Не существует правил, какой рисунок и какой тип ткани подходит к той или иной конкретной ситуации. Гамма расцветок обивочных тканей весьма широка. Мягкая мебель может органично вписываться в цветовой ансамбль комнаты (квартиры), а можно с ее помощью расставить цветовые акценты в помещении. Это сугубо личное дело вкуса каждого. Стоит лишь помнить, что подбирая диванчик по обивке, всегда следует учитывать насколько она подходит чисто с практической точки зрения. Спросите себя, насколько обивочная ткань будет долговечна и удобна в использовании?</p>
+
+                        <p>А теперь поговорим о том, что находится под обивкой диванчика. Возможно это вас удивит, но именно "начинка" мягкой мебели, ее состав, существенно влияет на цену изделия. Самой качественной считается та мягкая мебель, которая обязательно включает в себя: пружины, латекс, поролон, металлический каркас (сетка), прокладки (хлопок, шерсть). Хорошо, если пружины "заключены в вертикально расположенные "ячейки-мешочки", благодаря которым не происходит смещения, и матрац "держит" тело всей своей поверхностью, диван не проваливается. Такая мягкая мебель может сохранять форму 20 лет и более. Единственное, в чем она не будет нуждаться - в перетяжке обивки.</p>
+
+                        <p>Чем больше пружин на 1 кв. м., тем дороже будет стоить диван или матрац. Если в мягкой мебели вообще отсутствуют пружины ("начинка" состоит из каркаса-сетки и напыленного на него латекса и поролона), то такая мебель может стоить на порядок дешевле, но форму она может потерять уже через 2-3 года. Между тем, внешне она может почти не отличаться от дорогой, пружинной. Следует присмотреться получше.</p>
+
+                        <p>Ну вот. После того, как мы с вами хорошенько посмотрели на диванчик, потрогали его обивку, попытались вытащить пружины (если таковые есть в наличии), давайте на него сядем. А теперь попробуйте расслабиться. Получилось? Все дело в том, что порой самые интересные дизайнерские идеи были созданы скорее, чтобы радовать глаз, а не для того, чтобы радовать наше утомленное тело. Над этим стоит поразмышлять, ведь отдельные представители людского рода проходят (скорее проезжают) свой жизненный путь исключительно вместе с диванчиком (не в обиду будет сказано).</p>
+
+                        <p>Когда мы садимся, например, в кресло, через некоторое время мы может инстинктивно почувствовать какие-то неудобства. Скажем, напряжение в спине или слишком низкая спинка. На самом деле под расхожим выражением "неудобный диван" скрывается целая научная теория. При проектировании мягкой мебели учитываются угол отклонения спинки назад, уклон сиденья, угол между сиденьем и спинкой, опора для головы и т.д.</p>
+
+                        <p>Мы не будем вдаваться в подробности, утомляя Вас сухими цифрами и расчетами. Скажем пару слов.</p>
+
+                        <p>"Удобный" диванчик (диванчик для отдыха) должен иметь незначительный уклон сиденья, большой угол между сиденьем и спинкой и опору для головы. При такой конструкции мягкой мебели возникает желание вытянуть ноги вперед и придать телу положение полулежа. А чем ближе поза человека к естественно вытянутой, т.е. чем больше угол между бедром и туловищем, тем меньше напряжение в теле и лучше условия для расслабления мышц.</p>
+
+                    </div>
+                    <div class="info-left__footer mrp">
+                        <span>
+                            Вот, собственно говоря, и все, что хотелось сказать.
+                            Выбор за Вами, Господа!
+                        </span>
+                        <div class="info-left__transition">
+                            <a class="btn" href="#"><i class="fa  fa-long-arrow-left"></i></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="info-right">
+                <div class="info-right__top">
+                    <div class="info-right__logo">
+                        <img src="img/fourth-logo.png" alt="logo">
+                    </div>
+                    <div class="info-right__text m-title">
+                        <span class="mrp">Купи Диван</span>
+                        Каждый из производителей мебели, с которым   отрудничает наша компания, ручается за качество своих изделий,  их надежность и функциональность.
+                    </div>
+                </div>
+                <div class="info-right__bottom m-title">
+                    <div class="info-right__box">
+                        <img src="img/box.png" alt="box">
+                        <span>Бесплатная доставка</span>
+                        Предложение действует
+                        в пределах МКАД,
+                        при наличии грузового
+                        лифта.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fives">
+    <div class="footer-menu">
+        <div class="container">
+            <div class="footer-menu__items m-title">
+                <div class="footer-menu__item">
+                    <span>Компания</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">О Компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Фабрики</a>
+                            </li>
+                            <li>
+                                <a href="#">Скидки</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-menu__item">
+                    <span>Товары</span>
+                    <div class="footer-menu__content">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Мягкая мебель
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Спальни
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Шкафы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Стулья
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Столы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Корпусная мебель
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Идеи для дома
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Свет
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Акции  и распродажи
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Парты MOLL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Итальянская мебель в налиии
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Другое
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-menu__item footer-menu__item_margin">
+                    <span>предложения</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Дизайн
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мебель под заказ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мебель мира
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-menu__logo">
+                        <a href="index.html">
+                            <img src="img/footer-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-menu__elements">
+                        <div class="footer-menu__phone">
+                            <a href="tel:+7(495)120-14-20">+7(495)120-14-20</a>
+                        </div>
+                        <div class="footer-menu__icons">
+                            <a href="#">
+                                <img src="img/footer-basket.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-star.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-lock.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer">
+    <div class="credits s-title">
+        <div class="container-external">
+            <div class="credit">
+                <div class="credit__rights">
+                    Все права защищены
+                </div>
+                <div class="credit__developed">
+                    Разработано GRAB and GO
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Swiper JS -->
+<script src="swiper-4.1.6/dist/js/swiper.min.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/sliders.js"></script>
+</body>
+</html>

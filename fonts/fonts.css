@@ -1,0 +1,21 @@
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url("8143.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url("MyriadPro-LightSemiExt.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url("OpenSans-SemiBold.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+

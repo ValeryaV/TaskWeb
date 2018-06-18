@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Доставка</title>
+    <link rel="stylesheet" href="swiper-4.1.6/dist/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/delivery.css">
+</head>
+<body>
+<header class="header">
+    <div class="top-header ">
+        <div class="container-external">
+            <div class = "menu-desktop">
+                <div class="menu">
+                    <div class="menu-header">
+                        <div class="menu__logo">
+                            <a href="index.html">
+                                <img class="logo" src="img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="menu__links s-title">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-search "></i>
+                                    </li>
+                                    <li>
+                                        <a href="company.html">Компания</a>
+                                    </li>
+                                    <li>
+                                        <a href="factory.html">Фабрика</a>
+                                    </li>
+                                    <li>
+                                        <a href="order.html">Под заказ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a href="delivery.html">Доставка</a>
+                                    </li>
+                                    <li>
+                                        <a href="contacts.html">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a class="mrp" href="tel:+7(495)120-14-20">+7(495)120-14-20</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu__icons">
+                            <a href="#">
+                                <img src="img/footer-basket.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-star.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-lock.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <div class="burger">
+                    <button onclick="menu()" class="c-hamburger c-hamburger--htx">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="mobile-logo">
+                    Купи диван
+                </div>
+                <a href="tel:+7(495)120-14-20"> <i class="fa fa-phone"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container-external">
+            <div class="lists m-title">
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel1.png" alt="cushioned furniture">
+                        </div>
+                        <span class="list__title">Мягкая</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel2.png" alt="cabinet furniture">
+                        </div>
+                        <span class="list__title">Корпусная</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel3.png" alt="cabinets">
+                        </div>
+                        <span class="list__title">Шкафы</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel4.png" alt="bedrooms">
+                        </div>
+                        <span class="list__title">Спальни</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel5.png" alt="tables">
+                        </div>
+                        <span class="list__title">Столы</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel6.png" alt="chairs">
+                        </div>
+                        <span class="list__title">Стулья</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel7.png" alt="subjects">
+                        </div>
+                        <span class="list__title">Предметы</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel8.png" alt="light">
+                        </div>
+                        <span class="list__title">Свет</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel9.png" alt="shares">
+                        </div>
+                        <span class="list__title">Акции</span>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="#">
+                        <div class="list__img">
+                            <img src="img/lists/panel10.png" alt="other">
+                        </div>
+                        <span class="list__title">Другое</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dropdown-menu">
+    <div class="container-external">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Компания</a>
+                </li>
+                <li>
+                    <a href="#">Фабрика</a>
+                </li>
+                <li>
+                    <a href="#">Под заказ</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Доставка</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<section class="delivery">
+    <div class="delivery__img">
+        <img src="img/delivery.png" alt="delivery">
+    </div>
+</section>
+
+<section class="price">
+    <div class="container">
+        <div class="price__content">
+            <div class="price__title l-title">
+                Доставки товаров от фабрики Foppa Pedretti
+            </div>
+            <div class="price__text">
+                <p>Стоимость доставки товаров от фабрики Foppa Pedretti, которые находятся только в разделе «Идеи для дома» нашего магазина:</p>
+                <div class="price__position">
+                    <div class="price__item">
+                        Мелкие позиции
+                        <span>300</span> р.
+                    </div>
+                    <div class="price__item">
+                        1 предмет
+                        <span>500</span> р.
+                    </div>
+                    <div class="price__item">
+                        2 предмета
+                        <span>800</span> р.
+                    </div>
+                    <div class="price__item">
+                        3 предмета
+                        <span>1000</span> р.
+                    </div>
+                    <div class="price__item">
+                        4 предмета
+                        <span>1200</span> р.
+                    </div>
+                    <div class="price__item">
+                        5 предметов
+                        <span>1500</span> р.
+                    </div>
+                    <div class="price__item">
+                        Более 5 предметов
+                        от <span>1500</span> р.
+                    </div>
+                </div>
+                <p>в стоимость доставки включена доставка до подъезда по Москве, подъем в квартиру при наличии действующего лифта.</p>
+                <p>доставка Cenerentola 12, Cenerentola 18 и Scar-puli - 800р за 1 предмет.</p>
+                <p>доставка за пределы МКАД рассчитывается индивидуально.</p>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="conditions">
+    <div class="container">
+        <div class="conditions__content">
+            <div class="conditions-left">
+                <div class="conditions-left__title l-title">
+                    Условия доставки мебели
+                </div>
+                <div class="conditions-left__text">
+                    <p>Доставка мебели осуществляется в рабочие дни с 11.00 до 18.00.</p>
+                    <p>Возможна доставка после 18.00 или в выходные дни по предварительной договоренности с клиентом.</p>
+
+                    <p>Доставка по Москве до подъезда составляет 3 500р.</p>
+
+                    <p>Доставка за МКАД стоит 3 500р. плюс 40р. за каждый километр. За расстояние до 5 км. выезда за МКАД за километраж дополнительная плата не берется.</p>
+
+                    <p>Подъем мебели в квартиру рассчитывается индивидуально.</p>
+
+                    <p>Мебель некоторых фабрик, представленных на сайте, доставляется бесплатно представительством фабрики в Москве.</p>
+
+                    <span>Габариты мебели. Первое на что нужно обратить внимание это соотношение размеров дверных проемов вашей квартиры и транспортировочных габаритов модулей выбранной вами мебели. Бывает, что Покупатели сталкиваются с проблемами внесения мебели в квартиру и перемещения из комнаты в комнату в особенности, если они не воспользовались знаниями и опытом наших продавцов. Нужно помнить, что мебель, имеющая общую длину каркаса более 2х метров можно внести в помещение только при условии, если высота или глубина изделия не превышает ширины дверных проемов. Длина изделия менее 2х метров позволяет вносить его в вертикальном положении (на "попа), с заносом спинки за дверной проем.
+                        <p>Поэтому сразу за дверным проемом справа или слева должно быть свободное пространство не менее 15 см.</p>
+                    Если перечисленные выше условия невозможно соблюсти, мы рекомендуем Вам не рисковать и заказывать мебель со сборкой на дому.</span>
+
+                    <span>В любом случае, перед тем как произвести заказ мебели подготовьтесь ответить на ряд вопросов:</span>
+                    <ol>
+                        <li>Этаж</li>
+                        <li>Наличие работающего грузового лифта</li>
+                        <li>Наличие "черной" лестницы и ее освещенность при неработающем грузовом лифте.</li>
+                        <li>Все ли двери подъезда Вашего дома свободно открываются,</li>
+                        <li>Ширина дверных проемов Вашей квартиры</li>
+                        <li>Наличие свободного пространства слева или справа за дверями того помещения куда предполагается внести мебель</li>
+                        <li>Ширина проходов внутри помещения</li>
+                        <li>Наличие места для сборки изделия</li>
+                        <li>Для старого фонда актуален вопрос ширины лестничных маршей.</li>
+                    </ol>
+                    <span>Ответы на эти вопросы помогут Вам избежать ошибок при выборе модели и неприятностей при доставке Вашего заказа. Наши продавцы всегда готовы оказать Вам максимальное содействие, не откажите им в любезности и ответьте на эти вопросы.</span>
+
+                    <span>Транспортировка мебели.Транспортировка мягкой мебели производиться транспортом, специально оборудованным для перевозки мебели и иных крупногабаритных предметов интерьера.
+                    Перенос мебели от транспортного средства до места установки производиться специально подготовленными квалифицированными специалистами. Освободите от лишних вещей проходы к месту установки мебели и подготовьте площадь для временного складирования деталей и узлов, если мебель доставляется в разобранном виде.
+                    Во избежание нарушения целостности изделия (повреждения), в момент переноса мебели до места установки, обратите особое внимание на условия, в которых должна происходить данная процедура.</span>
+
+                    <span>Доставка.Доставка мебели по г. Москве, а также оказываем помощь в доставке в другие регионы России</span>
+                </div>
+                <div class="conditions-left__bottom mrp">
+                    <span>
+                        Желаем Вам приятного выбора и удачной покупки!
+                    </span>
+                    <div class="transition">
+                        <a class="btn" href="#"><i class="fa  fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="conditions-right">
+                <div class="conditions-right__top">
+                    <div class="conditions-right__logo">
+                        <img src="img/fourth-logo.png" alt="logo">
+                    </div>
+                    <div class="conditions-right__text m-title">
+                        <span class="mrp">Купи Диван</span>
+                        Каждый из производителей мебели, с которым   отрудничает наша компания, ручается за качество своих изделий,  их надежность и функциональность.
+                    </div>
+                </div>
+                <div class="conditions-right__bottom m-title">
+                    <div class="conditions-right__box">
+                        <img src="img/box.png" alt="box">
+                        <span>Бесплатная доставка</span>
+                        Предложение действует
+                        в пределах МКАД,
+                        при наличии грузового
+                        лифта.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fives">
+    <div class="footer-menu">
+        <div class="container">
+            <div class="footer-menu__items m-title">
+                <div class="footer-menu__item">
+                    <span>Компания</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">О Компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Фабрики</a>
+                            </li>
+                            <li>
+                                <a href="#">Скидки</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-menu__item">
+                    <span>Товары</span>
+                    <div class="footer-menu__content">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Мягкая мебель
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Спальни
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Шкафы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Стулья
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Столы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Корпусная мебель
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Идеи для дома
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Свет
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Акции  и распродажи
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Парты MOLL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Итальянская мебель в налиии
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Другое
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-menu__item footer-menu__item_margin">
+                    <span>предложения</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Дизайн
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мебель под заказ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мебель мира
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-menu__logo">
+                        <a href="index.html">
+                            <img src="img/footer-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-menu__elements">
+                        <div class="footer-menu__phone">
+                            <a href="tel:+7(495)120-14-20">+7(495)120-14-20</a>
+                        </div>
+                        <div class="footer-menu__icons">
+                            <a href="#">
+                                <img src="img/footer-basket.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-star.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer-lock.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="credits s-title">
+        <div class="container-external">
+            <div class="credit">
+                <div class="credit__rights">
+                    Все права защищены
+                </div>
+                <div class="credit__developed">
+                    Разработано GRAB and GO
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Swiper JS -->
+<script src="swiper-4.1.6/dist/js/swiper.min.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/sliders.js"></script>
+</body>
+</html>
