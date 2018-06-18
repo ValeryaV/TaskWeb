@@ -1,0 +1,640 @@
+/* Первый экран */
+.company{
+    margin-bottom: 7.5%;
+}
+
+.company__img img{
+    width: 100%;
+}
+
+/* Второй экран */
+.info{
+    font-weight: 300;
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.info__content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.info-left{
+    color: #1a1a1a;
+    width: 85%;
+}
+
+.info-left__title{
+    margin-bottom: 6%;
+    width: 95%;
+}
+
+.info-left__text{
+    width: 92%;
+
+}
+.info-left__text p{
+    margin-bottom: 2.5%;
+}
+
+.info-left__text p:last-child{
+    margin-bottom: 0;
+}
+
+.info-right{
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #acacac;
+}
+
+.info-right__logo img{
+    margin-bottom: 10%;
+}
+
+.info-right__text span{
+    font-weight: 400;
+    display: block;
+    color: #5da7aa;
+    font-size: 20px;
+}
+
+/* Третий экран */
+.store{
+    color: #1a1a1a;
+    font-weight: 300;
+    margin-bottom: 9%;
+}
+
+.store__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-left{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.store-left__img{
+    position: relative;
+    margin-bottom: 9%;
+}
+
+.store-left__img img{
+    width: 100%;
+}
+
+.store-left__wishes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.store-left__wishes span{
+    margin-bottom: 6.5%;
+}
+
+.store-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    width: 35%;
+    position: absolute;;
+    font-size: 20px;
+    margin-top: 22.5%;
+    margin-left: 40.5%;
+}
+
+.store-description__title{
+    width: 88%;
+    font-size: 36px;
+    padding-top: 11%;
+    margin-bottom: 8%;
+
+}
+
+.store-description__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.store-description__text p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 88%;
+    margin-bottom: 4.5%;
+}
+
+.store-description__text p:last-child{
+    margin-bottom: 8.5%;
+}
+
+.store-right{
+    width: 15%;
+    color: #acacac;
+}
+
+.store-right img{
+    margin-bottom: 15%;
+}
+
+.store-right span{
+    display: block;
+    color: #1a1a1a;
+    margin-bottom: 10%;
+}
+
+/* Четвертая секция */
+.furniture-factories{
+    color: #1a1a1a;
+    font-weight: 300;
+    margin-bottom: 11%;
+}
+.furniture-factories__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.furniture-factories__title{
+    margin-bottom: 6%;
+}
+
+.furniture-factories__gallery{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.furniture-factories__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.furniture-factories__item img:first-child{
+    width: 58%;
+}
+
+.furniture-factories__item img:last-child{
+    width: 40%;
+}
+
+@media (min-width: 320px) and (max-width: 359px){
+    .l-title{
+        font-size: 25px;
+    }
+
+    .m-title{
+        font-size: 10px;
+    }
+
+    .s-title{
+        font-size: 10px;
+    }
+
+    .company{
+        padding-top: 70px;
+    }
+
+    .info-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .info-left__text{
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 15%;
+    }
+
+    .info-right{
+        width: 100%;
+    }
+
+    .info-right__logo img, .store-right img{
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    .info-right__text span, .store-right span{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    .store-description{
+        display: none;
+    }
+
+    .store__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .store-left, .store-left__wishes, .store-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .store-left__wishes{
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .btn {
+        width: 90px;
+        height: 40px;
+    }
+
+    .furniture-factories__gallery{
+        display: block;
+    }
+
+    .furniture-factories__item{
+        height: 45px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 479px){
+    .l-title{
+        font-size: 25px;
+    }
+
+    .m-title{
+        font-size: 12px;
+    }
+
+    .s-title{
+        font-size: 10px;
+    }
+
+    .company{
+        padding-top: 70px;
+    }
+
+    .info-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .info-left__text{
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 15%;
+    }
+
+    .info-right{
+        width: 100%;
+    }
+
+    .info-right__logo img, .store-right img{
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    .info-right__text span, .store-right span{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .store-description{
+        display: none;
+    }
+
+    .store__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .store-left, .store-left__wishes, .store-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .store-left__wishes{
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+    }
+
+    .furniture-factories__gallery{
+        display: block;
+    }
+
+    .furniture-factories__item{
+        height: 50px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .l-title{
+        font-size: 30px;
+    }
+
+    .m-title{
+        font-size: 14px;
+    }
+
+    .s-title{
+        font-size: 12px;
+    }
+
+    .company{
+        padding-top: 70px;
+    }
+
+    .info-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .info-left__text{
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 15%;
+    }
+
+    .info-right{
+        width: 100%;
+    }
+
+    .info-right__logo img, .store-right img{
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    .info-right__text span, .store-right span{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .store-description{
+        display: none;
+    }
+
+    .store__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .store-left, .store-left__wishes, .store-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .store-left__wishes{
+        font-size: 22px;
+        margin-bottom: 10%;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+    }
+
+    .furniture-factories__gallery{
+        display: block;
+    }
+
+    .furniture-factories__item{
+        height: 60px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .l-title{
+        font-size: 40px;
+    }
+
+    .m-title{
+        font-size: 15px;
+    }
+
+    .s-title{
+        font-size: 12px;
+    }
+
+    .company{
+        padding-top: 70px;
+    }
+
+    .info-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .info-left__text{
+        width: 100%;
+        font-size: 17px;
+        margin-bottom: 15%;
+    }
+
+    .info-right{
+        width: 100%;
+    }
+
+    .info-right__logo img, .store-right img{
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .info-right__text span, .store-right span{
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    .store-description{
+        display: none;
+    }
+
+    .store__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .store-left, .store-left__wishes, .store-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .store-left__wishes{
+        font-size: 22px;
+        margin-bottom: 10%;
+    }
+
+    .btn {
+        width: 150px;
+        height: 70px;
+    }
+
+    .furniture-factories__item{
+        height: 80px;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1919px){
+    .l-title{
+        font-size: 50px;
+    }
+
+    .m-title{
+        font-size: 14px;
+    }
+
+    .s-title{
+        font-size: 14px;
+    }
+
+    .info-left__text{
+        font-size: 17px;
+    }
+
+    .info-right__text span, .store-right span{
+        font-size: 25px;
+    }
+
+    .store{
+        margin-bottom: 15%;
+    }
+
+    .store-left__wishes{
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
